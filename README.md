@@ -7,6 +7,9 @@ Lessons in Skypro, Python dewalopment
 Инкремент +=
 Декремент -=
 
+# есть ли в "а" значение "b"
+a in b 
+
 print(f"string{war}")
 
 str() — строка
