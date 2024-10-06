@@ -9,8 +9,8 @@ def EndNumberOne (number_in):
 
 print(EndNumberOne(number))
 
-def FileTupe (file_name):
-   if ".gif" in file_name:
-      return True
-   else:
-      return False
+# def FileTupe (file_name):
+#    if ".gif" in file_name:
+#       return True
+#    else:
+#       return False
