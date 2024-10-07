@@ -15,11 +15,3 @@
 #    else:
 #       return False
 
-<<<<<<< HEAD
-# def FileTupe (file_name):
-#    if ".gif" in file_name:
-#       return True
-#    else:
-#       return False
-=======
->>>>>>> 729a7605ee264979177ce7f3dc62cdf2fd27b9d8
