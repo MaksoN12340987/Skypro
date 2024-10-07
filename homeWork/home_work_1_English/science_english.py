@@ -37,8 +37,8 @@ def Question_exists_in():
 def Status_count(coll_question_in, count_true_questions_in, reward_in):
     print(f"Вы ответили на {count_true_questions_in} вопросов из {coll_question_in} верно.")
     print(f"Вы заработали {count_true_questions_in * reward_in} баллов.")
-    fracton_true_question = (coll_question_in / count_true_questions_in) * 100
-    print(f"Это {fracton_true_question} процентов.")
+    fracton_true_question = (count_true_questions_in / coll_question_in) * 100
+    print(f"Это {round(fracton_true_question, 2)} процентов.")
 
     
 # Выполняем основной блок приветствия пользователю
@@ -52,4 +52,3 @@ count_true_questions += Question_exists_in()
 
 print(f"Вот и всё, {name_user}!")
 Status_count(coll_question, count_true_questions, question_reward)
-
