@@ -12,7 +12,7 @@ def Question_exists_is(name_in, count_in, true_count):
     else:
         print(f"Неправильно.\nПравильный ответ: is")
     count_in += 1
-    return count_in, true_count
+    return true_count
         
 def Question_exists_am():
     word_in = input(f"Какое слово пропущено?\nI ___ a coder. \n")
