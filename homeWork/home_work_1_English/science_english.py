@@ -45,7 +45,7 @@ def Status_count(coll_question_in, count_true_questions_in, reward_in):
 name_user = input("Привет! Предлагаю проверить свои знания английского!\nНапиши, как тебя зовут? \n")
 print(f"Привет, {name_user}, начинаем тренировку! \n")
 
-# Выполняем блок вопосов
+# Выполняем блок вопpосов
 count_true_questions += Question_exists_is(name_user)
 count_true_questions += Question_exists_am()
 count_true_questions += Question_exists_in()
