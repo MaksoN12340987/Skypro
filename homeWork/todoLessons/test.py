@@ -63,27 +63,39 @@
 #   print(manager)
 
 
-weekdays = [
-"pirmdiena", 
-"otrdiena", 
-"trešdiena",
-"ceturtdiena", 
-"piektdiena", 
-"sestdiena", 
-"svētdiena"]
+# weekdays = [
+# "pirmdiena", 
+# "otrdiena", 
+# "trešdiena",
+# "ceturtdiena", 
+# "piektdiena", 
+# "sestdiena", 
+# "svētdiena"
+# ]
 
-workdays = []
-# i = 0
-# while i != len(weekdays):
-#    if i < 5:
-#       workdays.append(weekdays[i])
-#    i += 1
+# workdays = []
+# # i = 0
+# # while i != len(weekdays):
+# #    if i < 5:
+# #       workdays.append(weekdays[i])
+# #    i += 1
 
-for index in weekdays:
-   if index < 5:
-      workdays.append(weekdays[index])
+# for index in weekdays:
+#    if index < 5:
+#       workdays.append(weekdays[index])
 
-# Не удаляйте код ниже, он нужен для проверки
+# # Не удаляйте код ниже, он нужен для проверки
 
-for workday in workdays:
-  print(workday)
+# for workday in workdays:
+#   print(workday)
+
+lst_in = [[1, 0, 0, 0, 0], [0, 0, 1, 0, 0], [0, 0, 0, 0, 0], [0, 1, 0, 1, 0], [0, 0, 0, 0, 0]]
+
+flag = "ДА"
+for i in range(len(lst_in)-1):
+    for j in range(len(lst_in)-1):
+        if lst_in[i][j] + lst_in[i][j + 1] + lst_in[i + 1][j] + lst_in[i +1][j +1] > 1:
+            flag = 'НЕТ'
+            break
+
+print(flag)
