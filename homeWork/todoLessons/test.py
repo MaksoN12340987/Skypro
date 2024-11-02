@@ -89,13 +89,27 @@
 # for workday in workdays:
 #   print(workday)
 
-lst_in = [[1, 0, 0, 0, 0], [0, 0, 1, 0, 0], [0, 0, 0, 0, 0], [0, 1, 0, 1, 0], [0, 0, 0, 0, 0]]
+# lst_in = [[1, 0, 0, 0, 0], [0, 0, 1, 0, 0], [0, 0, 0, 0, 0], [0, 1, 0, 1, 0], [0, 0, 0, 0, 0]]
 
-flag = "ДА"
-for i in range(len(lst_in)-1):
-    for j in range(len(lst_in)-1):
-        if lst_in[i][j] + lst_in[i][j + 1] + lst_in[i + 1][j] + lst_in[i +1][j +1] > 1:
-            flag = 'НЕТ'
-            break
+# flag = "ДА"
+# for i in range(len(lst_in)-1):
+#     for j in range(len(lst_in)-1):
+#         if lst_in[i][j] + lst_in[i][j + 1] + lst_in[i + 1][j] + lst_in[i +1][j +1] > 1:
+#             flag = 'НЕТ'
+#             break
 
-print(flag)
+# print(flag)
+
+
+line = input()
+line_spaceless = ""
+
+for lines in line:
+    if lines == " ":
+        continue
+    elif lines == "_":
+        continue
+    else:
+        line_spaceless += lines
+        
+print("".join(line_spaceless))
