@@ -101,15 +101,18 @@
 # print(flag)
 
 
-line = input()
-line_spaceless = ""
+# line = input()
+# line_spaceless = ""
 
-for lines in line:
-    if lines == " ":
-        continue
-    elif lines == "_":
-        continue
-    else:
-        line_spaceless += lines
+# for lines in line:
+#     if lines == " ":
+#         continue
+#     elif lines == "_":
+#         continue
+#     else:
+#         line_spaceless += lines
         
-print("".join(line_spaceless))
+# print("".join(line_spaceless))
+
+number = "abcde"[:2]
+print(number)
