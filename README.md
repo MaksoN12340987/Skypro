@@ -57,3 +57,10 @@ string.upper()                                              string.split()
 string.title()                                              
                                                             
 
+
+<!-- virtual environment -->
+
+# Create Windows
+python -m venv venv
+# Linux, macOS
+python3 -m venv venv
