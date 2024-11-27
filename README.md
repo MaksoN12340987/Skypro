@@ -64,3 +64,16 @@ string.title()
 python -m venv venv
 # Linux, macOS
 python3 -m venv venv
+
+# Function
+# возвращает текущую рабочую директорию в виде строки
+= os.getcwd()
+
+# возвращает список файлов и директорий в указанной директории
+= os.listdir('/path/to/directory')
+
+# объединения путей
+joined_path = os.path.join(path1, path2)
+
+
+ = os.path.dirname('/path/to/directory/file.txt')  >>>  /path/to/directory
