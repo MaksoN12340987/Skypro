@@ -48,18 +48,18 @@ def morse_decode(dictionary, word):
 # Напишите функцию calculate_total_cost(), которая принимает список продуктов 
 # и возвращает общую стоимость всех товаров (цена * количество).
 # Если у продукта не указаны цена и/или количество, это не должно приводить к ошибке.
-def calculate_total_cost(ist_products):
+def calculate_total_cost(list_products):
     total_prise = 0
     prise = 0
     quantity = 0
-    for i in range(len(ist_products)):
-        keys_list = list(ist_products[i].keys())
+    for i in range(len(list_products)):
+        keys_list = list(list_products[i].keys())
         for index in range(len(keys_list)):
             if keys_list[index] == "price":
-                prise = ist_products[i][keys_list[index]]
+                prise = list_products[i][keys_list[index]]
                 print(prise)
             elif keys_list[index] == "quantity":
-                quantity = ist_products[i][keys_list[index]]
+                quantity = list_products[i][keys_list[index]]
                 print(quantity)
         if prise == 0:
             prise = 1
@@ -93,9 +93,9 @@ products = [
 
 def filter_products_by_price(list_products, maximum_price):
     finaly_list = []
-    for i in range(len(ist_products)):
-        if ist_products[i].get("price", 0) <= maximum_price:
-            finaly_list.append(ist_products[i])
+    for i in range(len(list_products)):
+        if list_products[i].get("price", 0) <= maximum_price:
+            finaly_list.append(list_products[i])
     return finaly_list
 
 
@@ -103,11 +103,11 @@ def filter_products_by_price(list_products, maximum_price):
 # возвращает информацию о продукте по его имени. Если продукт не найден в списке, 
 # функция возвращает строку «Продукт с таким именем не найден в списке». 
 # Если у продукта отсутствует имя, это не должно привести к ошибке
-def find_product_by_name(ist_product, name_product):
+def find_product_by_name(list_product, name_product):
     final = None
-    for i in range(len(ist_product)):
-        if ist_product[i].get("name", 0) == name_product:
-            final = ist_product[i]
+    for i in range(len(list_product)):
+        if list_product[i].get("name", 0) == name_product:
+            final = list_product[i]
     if final:
         return final
     else:
@@ -125,15 +125,15 @@ replace_dict = {"name": "REPLASE", "price": 250, "quantity": 10, "brand": "GHI",
 
 def update_product_info(list_product, name_product, dict_data):
     final = False
-    for i in range(len(ist_product)):
-        if ist_product[i].get("name", 0) == name_product:
+    for i in range(len(list_product)):
+        if list_product[i].get("name", 0) == name_product:
             final = True
             keys_list = list(dict_data.keys())
-            final = ist_product[i]
+            final = list_product[i]
             for count in range(len(dict_data)):
-                ist_product[i][keys_list[count]] = dict_data[keys_list[count]]
+                list_product[i][keys_list[count]] = dict_data[keys_list[count]]
     if final:
-        return ist_product
+        return list_product
     else:
         return "Продукт с таким именем не найден в списке"
     
@@ -146,13 +146,13 @@ def update_product_info(list_product, name_product, dict_data):
 # если ключа в словаре нет - количество должно равняться 0 (используйте метод get())
 
 def sort_products_by_quantity(list_product, ascending=False):
-    print(len(ist_product))
-    if ist_product[0]:
-        for i in range(len(ist_product)):
-            if not ist_product[i].get("quantity", False):
-                item = ist_product.pop(ist_product[i])
-        ist_product.sort(key=lambda ist_product: ist_product["quantity"], reverse=ascending)
-    return ist_product
+    print(len(list_product))
+    if list_product[0]:
+        for i in range(len(list_product)):
+            if not list_product[i].get("quantity", False):
+                item = list_product.pop(list_product[i])
+        list_product.sort(key=lambda ist_product: ist_product["quantity"], reverse=ascending)
+    return list_product
 
 
 # Напишите функцию average_price_per_category(), которая принимает на вход список продуктов и возвращает новый словарь, 
