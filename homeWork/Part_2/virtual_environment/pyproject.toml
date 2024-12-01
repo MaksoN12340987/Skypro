@@ -1,39 +1,12 @@
 [tool.poetry]
-name = "virtual-environment"
+name = "home-work-virtual-environment"
 version = "0.1.0"
-description = "This is a homework project with a virtual environment."
+description = ""
 authors = ["Maksim Andreev <andrianov_maksim@outlook.com>"]
 readme = "README.md"
 
-
 [tool.poetry.dependencies]
 python = "^3.13"
-
-
-[tool.poetry.group.def.dependencies]
-requests = "^2.32.3"
-
-
-[tool.poetry.group.lint.dependencies]
-flake8 = "^7.1.1"
-mypy = "^1.13.0"
-black = "^24.10.0"
-
-[tool.mypy]
-disallow_untyped_defs = true
-no_implicit_optional = true
-warn_return_any = true
-warn_unreachable = true
-exclude = 'venv'
-[tool.black]
-line-length = 119
-exclude = \.eggs
-exclude = \.git
-exclude = \.hg
-exclude = \.mypy_cache
-exclude = \.tox
-exclude = \.venv
-exclude = dist
 
 
 [build-system]
