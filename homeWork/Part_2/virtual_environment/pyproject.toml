@@ -5,6 +5,7 @@ description = "This is a homework project with a virtual environment."
 authors = ["Maksim Andreev <andrianov_maksim@outlook.com>"]
 readme = "README.md"
 
+
 [tool.poetry.dependencies]
 python = "^3.13"
 
