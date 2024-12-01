@@ -17,6 +17,7 @@ requests = "^2.32.3"
 [tool.poetry.group.lint.dependencies]
 flake8 = "^7.1.1"
 mypy = "^1.13.0"
+black = "^24.10.0"
 
 [tool.mypy]
 disallow_untyped_defs = true
@@ -24,6 +25,15 @@ no_implicit_optional = true
 warn_return_any = true
 warn_unreachable = true
 exclude = 'venv'
+[tool.black]
+line-length = 119
+exclude = \.eggs
+exclude = \.git
+exclude = \.hg
+exclude = \.mypy_cache
+exclude = \.tox
+exclude = \.venv
+exclude = dist
 
 
 [build-system]

@@ -41,20 +41,32 @@ list_1.extend(list_2)
 
 <!-- ///   STRING   /// -->
 
-# поиск позиции первого вхождения подстроки в строку        # замена элементов строки
-string.index(substring)                                     string.replace(old_substring, new_substring)
-                                                            
-# колличество вхождений элементов                           # состоит ли каждый символ строки из цифр (0–9)
-string.count(element)                                       string.isdigit()   "10 24".isdigit() >>>  False
-                                                            
-# перевод в нижний регистр                                  #  каждый символ строки из букв
-string.lower()                                              "кусь".isalpha()  >>>  True
-                                                            
-# перевод в верхний регистр                                 # создать список из строки
-string.upper()                                              string.split()
-                                                            
-# чтобы все слова начинались с большой буквы                
-string.title()                                              
+# поиск позиции первого вхождения подстроки в строку
+string.index(substring)                             
+                            
+# колличество вхождений элементов                   
+string.count(element)                              
+                    
+# перевод в нижний регистр                          
+string.lower()                                      
+                            
+# перевод в верхний регистр                        
+string.upper()                                      
+                            
+# чтобы все слова начинались с большой буквы  
+string.title()
+
+# замена элементов строки
+string.replace(old_substring, new_substring)
+
+# состоит ли каждый символ строки из цифр (0–9)
+string.isdigit()   "10 24".isdigit() >>>  False
+
+#  каждый символ строки из букв
+"кусь".isalpha()  >>>  True
+
+# создать список из строки
+string.split()
                                                             
 
 
