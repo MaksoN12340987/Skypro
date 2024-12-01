@@ -112,3 +112,23 @@ with open('example.txt', 'r+') as file:
 # сжатые данные, и другими типами файлов, которые не предназначены для текстового представления
 
 
+<!-- Module typing -->
+# Union переменную с несколькими возможными типами
+def foo(arg: Union[str, int]) -> None:
+
+# Any переменная может иметь любой тип
+def foo(arg: Any) -> None:
+
+# Optional переменная может иметь значение None
+def foo(arg: Optional[int] = None) -> None:
+# or: 
+def foo(arg: int | None) -> None:
+
+# Iterable переменная является итерируемым объектом, например list, tuple, set или dict
+def foo(arg: Iterable[int]) -> None:
+
+# Callable для объектов, которые являются вызываемыми (со скобками), например любая функция
+def foo(func: Callable, array: Iterable[int]) -> None:
+
+# 
+# 
