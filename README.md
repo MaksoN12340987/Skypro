@@ -143,6 +143,10 @@ def foo(arg: Iterable[int]) -> None:
 def foo(func: Callable, array: Iterable[int]) -> None:
 
 
+# PYTEST
+
+pytest --cov=src --cov-report=html
+
 
 <!-- GIT -->
 # --cached — команда удалит файл только из индекса, но оставит его в вашем рабочем каталоге (файл сохранится на диске):
